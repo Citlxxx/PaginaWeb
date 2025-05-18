@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F0E6; /* Fondo beige claro (Paleta 5) */
+    color: #3E3E3E; /* Texto gris oscuro */
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #B8A188; /* Arena (destacado) */
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: #3E3E3E; /* Gris oscuro para contraste */
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #6D7B8D; /* Gris azulado (botones) */
+    padding: 0.8rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+article {
+    background-color: #d9d9d9;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid #D9D9D9; /* Gris claro (bordes) */
+}
+
+article h3 {
+    color: #6D7B8D; /* Gris azulado para títulos */
+}
+
+/* Formulario de contacto (contact.html) */
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #D9D9D9;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #6D7B8D; /* Gris azulado */
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #5a6778; /* Ton más oscuro al pasar el mouse */
+}
+
+/* Pie de página */
+footer {
+    background-color: #B8A188; /* Arena */
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+/* Responsive (para móviles) */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
