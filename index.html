@@ -3,34 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProTenebrios</title>
+    <title>ProTenebrios - Productos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
     <h1>ProTenebrios</h1>
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="about.html">¿Quiénes Somos?</a>
-        <a href="contact.html">Contacto</a>
+        <a href="index.html">Productos</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Pedidos</a>
+        <a href="carrito.html" class="cart-link">🛒 (<span id="cart-count">0</span>)</a>
     </nav>
 </header>
 
 <main>
-    <h2>Delicioso y nutritivo</h2>
-    <article>
-        <h3>Nuestro objetivo</h3>
-        <img src="img/tenerios.jpeg" alt="Descripción">
-        <p>
-            En ProTenebrios, creemos que la nutrición del futuro comienza hoy.
-            <br><br>Nuestra especialidad: barras de proteína elaboradas a base de tenebrio (gusano de la harina) y soja,
-            una combinación poderosa que une lo mejor del mundo vegetal con los beneficios de las
-            proteínas de insecto.</p>
-    </article>
+    <section class="hero">
+        <h2>Proteína Sostenible de Tenebrios</h2>
+        <p>100% ecológica · Alto valor nutricional</p>
+    </section>
+
+    <section class="product-grid">
+        <!-- Producto 1 -->
+        <div class="product-card" data-id="1">
+            <img src="img/harina.jpeg" alt="Harina de Tenebrios">
+            <h3>Harina de Tenebrios (500g)</h3>
+            <p class="price">$199 MXN</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card" data-id="2">
+            <img src="img/galleta.jpeg" alt="Snacks de Tenebrios">
+            <h3>Snacks Proteicos (30g)</h3>
+            <p class="price">$85 MXN</p>
+            <button class="add-to-cart">Añadir al carrito</button>
+        </div>
+    </section>
 </main>
 
-<footer>
-    <p>© 2024 Mi Blog</p>
-</footer>
+<script src="script.js"></script>
 </body>
 </html>

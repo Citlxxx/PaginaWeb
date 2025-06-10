@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ProTenebrios - Carrito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>ProTenebrios</h1>
+    <nav>
+        <a href="index.html">Productos</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Pedidos</a>
+        <a href="carrito.html" class="cart-link">🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Tu Carrito</h2>
+    <div id="cart-items">
+        <!-- Los productos aparecerán así: -->
+        <!--
+        <div class="cart-item">
+            <img src="img/tenerios.jpeg" alt="Harina de Tenebrios">
+            <div class="item-details">
+                <h4>Harina de Tenebrios (500g)</h4>
+                <p>$199 MXN</p>
+            </div>
+            <button class="remove-item" data-id="1">🗑️ Eliminar</button>
+        </div>
+        -->
+    </div>
+    <div class="cart-total">
+        <p>Total: <span id="total-price">$0 MXN</span></p>
+        <a href="contact.html" class="checkout-btn">Finalizar compra</a>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

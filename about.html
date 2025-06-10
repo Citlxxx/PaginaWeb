@@ -3,51 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog</title>
+    <title>ProTenebrios - Nosotros</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
     <h1>ProTenebrios</h1>
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="about.html">¿Quiénes Somos?</a>
-        <a href="contact.html">Contacto</a>
+        <a href="index.html">Productos</a>
+        <a href="about.html" class="active">Nosotros</a>
+        <a href="contact.html">Pedidos</a>
+        <a href="carrito.html" class="cart-link">🛒 (<span id="cart-count">0</span>)</a>
     </nav>
 </header>
 
-<!-- Misma estructura que index.html, pero con este contenido: -->
-<section>
-    <article>
-        <h3>¿Quiénes Somos?</h3>
-        <img src="img/tenerios.jpeg" alt="Nuestro equipo">
-        <p>Somos una empresa comprometida con ofrecer alternativas
-            alimenticias sostenibles, nutritivas y deliciosas.</p>
-    </article>
-</section>
+<main class="about-container">
+    <!-- Sección Quiénes Somos -->
+    <section class="about-card">
+        <div class="about-content">
+            <h2>¿Quiénes Somos?</h2>
+            <div class="about-text">
+                <p>Somos una empresa comprometida con ofrecer alternativas alimenticias sostenibles, nutritivas y deliciosas.</p>
+                <p>Pioneros en México en la producción de alimentos a base de tenebrios, combinando innovación y tradición para crear productos revolucionarios.</p>
+            </div>
+        </div>
+        <img src="img/logo.jpg" width="400" height="400" alt="Equipo ProTenebrios" class="about-img">
+    </section>
 
-<section>
-    <article>
-        <h3>Misión, visión y valores</h3>
-        <img src="img/tenerios.jpeg" alt="Nuestro equipo">
-        <p>Nacimos con la misión de cambiar la manera en que el mundo consume proteína. Con cada
-            barra, no solo estás alimentando tu cuerpo con una fuente rica en nutrientes, sino también
-            apostando por un modelo de producción más respetuoso con el planeta.</p>
-    </article>
-</section>
+    <!-- Sección Misión, Visión y Valores -->
+    <section class="mission-section">
+        <div class="mission-card">
+            <h3>Nuestra Misión</h3>
+            <p>Cambiar la manera en que el mundo consume proteína. Con cada barra, no solo estás alimentando tu cuerpo con una fuente rica en nutrientes, sino también apostando por un modelo de producción más respetuoso con el planeta.</p>
+        </div>
 
-<section>
-    <article>
-        <h3>Nuestro equipo</h3>
-        <img src="img/tenerios.jpeg" alt="Nuestro equipo">
-        <p>Nuestro equipo está conformado por apasionados de la alimentación consciente, la innovación
-            y la sostenibilidad. Trabajamos día a día para ofrecerte productos que se alineen con tus
-            valores y necesidades nutricionales, sin comprometer el sabor ni la calidad.</p>
-    </article>
-</section>
+        <div class="mission-card">
+            <h3>Nuestra Visión</h3>
+            <!-- <img src="img/vision-icon.png" alt="Icono visión" class="mission-icon"> -->
+            <p>Ser líderes en la revolución alimentaria, haciendo accesible la proteína sostenible a todas las familias mexicanas para 2030.</p>
+        </div>
+
+        <div class="mission-card">
+            <h3>Nuestros Valores</h3>
+            <!-- <img src="img/valores-icon.png" alt="Icono valores" class="mission-icon"> -->
+            <ul class="values-list">
+                <li>Sostenibilidad ambiental</li>
+                <li>Innovación constante</li>
+                <li>Transparencia absoluta</li>
+                <li>Calidad nutricional</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección Nuestro Equipo -->
+    <section class="team-section">
+        <h2>Conoce a Nuestro Equipo</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <h4>Equipo de Investigación</h4>
+                <p>Expertos en nutrición y entomología aplicada</p>
+            </div>
+            <div class="team-member">
+                <h4>Equipo de Producción</h4>
+                <p>Comprometidos con los más altos estándares de calidad</p>
+            </div>
+            <div class="team-member">
+                <h4>Equipo Comercial</h4>
+                <p>Conectando con consumidores conscientes</p>
+            </div>
+        </div>
+        <p class="team-description">Nuestro equipo está conformado por apasionados de la alimentación consciente, la innovación y la sostenibilidad. Trabajamos día a día para ofrecerte productos que se alineen con tus valores y necesidades nutricionales, sin comprometer el sabor ni la calidad.</p>
+    </section>
+</main>
 
 <footer>
-    <p>© 2024 Mi Blog</p>
+    <div class="footer-content">
+        <div class="director-info">
+            <p><strong>Director General</strong></p>
+            <p>Francisco Vladimir Sánchez Cayetano</p>
+        </div>
+        <p class="copyright">© 2024 ProTenebrios - Todos los derechos reservados</p>
+    </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,99 @@
 /* Estilos generales */
+/* Estilos para las tarjetas de producto */
+.card {
+    border: 1px solid #D2B48C; /* Color beige de tu paleta */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+/* Grid de beneficios */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.benefit-card {
+    background-color: #F5F5F5;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Iconos */
+.icon {
+    font-size: 2rem;
+    display: block;
+}
+
+/* Estilos para el carrito */
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    color: #d9534f;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.remove-item:hover {
+    color: #c9302c;
+}
+
+.empty-cart {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    background-color: #8B5A2B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;

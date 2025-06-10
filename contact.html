@@ -3,39 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog</title>
+    <title>ProTenebrios - Contacto y Pedidos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
     <h1>ProTenebrios</h1>
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="about.html">¿Quiénes Somos?</a>
-        <a href="contact.html">Contacto</a>
+        <a href="index.html">Productos</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html" class="active">Pedidos</a>
+        <a href="carrito.html" class="cart-link">🛒 (<span id="cart-count">0</span>)</a>
     </nav>
 </header>
 
-<section>
-    <article>
-        <h3>Nuestro contacto</h3>
-        <img src="img/tenerios.jpeg" alt="Nuestro equipo">
-        <p>Únete a nosotros y descubre cómo pequeñas decisiones pueden generar grandes cambios.</p>
-        <br><br>
-        <p>Nuestro producto contiene ingredientes de alta calidad como:</p>
-        <ul>
-            <li>Amaranto</li>
-            <li>Chocolate amargo</li>
-            <li>Soja</li>
-            <li>Tenebrio molitor deshidratado</li>
-        </ul>
-    </article>
-</section>
+<main>
+    <section class="contact-container">
+        <!-- Sección de Información de Contacto -->
+        <article class="contact-card">
+            <h2>¡Haz tu pedido ahora!</h2>
+            <img src="img/galleta.jpeg" alt="Proceso de producción" class="contact-img">
+
+            <div class="contact-methods">
+                <!-- WhatsApp (principal para ventas) -->
+                <div class="contact-method">
+                    <h3>📱 WhatsApp</h3>
+                    <p>Pedidos inmediatos y consultas</p>
+                    <a href="https://wa.me/527471737106?text=Hola,%20quiero%20hacer%20un%20pedido%20de%20ProTenebrios" class="whatsapp-btn">
+                        💬 Enviar mensaje
+                    </a>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="contact-method">
+                    <h3>📞 Teléfono</h3>
+                    <p>Horario: 9am - 6pm</p>
+                    <a href="tel:+527471737106" class="phone-btn">
+                        Llamar ahora
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Sección de Ingredientes (como valor agregado) -->
+        <article class="ingredients-card">
+            <h3>🍫 Ingredientes Premium</h3>
+            <p>Nuestros productos contienen:</p>
+            <ul class="ingredients-list">
+                <li>✅ Amaranto orgánico</li>
+                <li>✅ Chocolate amargo 70% cacao</li>
+                <li>✅ Soja no transgénica</li>
+                <li>✅ <strong>Tenebrio molitor</strong> deshidratado (alto en proteína)</li>
+            </ul>
+
+        </article>
+    </section>
+</main>
 
 <footer>
-    <p>Director General</p>Francisco Vladimir Sánchez Cayetano
-    <br><a href="tel:+527471737106" class="phone-link">📞 ¡Llámanos!</a>
-    <p>© 2024 Mi Blog</p>
+    <div class="footer-content">
+        <div class="director-info">
+            <p><strong>Director General</strong></p>
+            <p>Francisco Vladimir Sánchez Cayetano</p>
+        </div>
+
+        <div class="legal-links">
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Política de privacidad</a>
+        </div>
+
+        <p class="copyright">© 2024 ProTenebrios - Todos los derechos reservados</p>
+    </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
